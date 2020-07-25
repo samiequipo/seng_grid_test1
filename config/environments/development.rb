@@ -59,6 +59,7 @@ Rails.application.configure do
   # routes, locales, etc. This feature depends on the listen gem.
 
   config.action_mailer.default_url_options = { :host => 'localhost:3000' }
-  config.action_mailer.delivery_method = :smtp
+  # smtp
+  config.action_mailer.delivery_method = :test
   config.action_mailer.perform_deliveries = true
 end
